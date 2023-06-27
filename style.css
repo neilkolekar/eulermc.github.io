@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;1,300&display=swap');
+
+hr {
+  height: 1px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
+
+@media only screen and (min-width: 775.0000001px) {
+  body {font-family: Arial, Helvetica, sans-serif; padding: 0; margin: 0;}
+  * {box-sizing: border-box;}
+
+  .top-header {
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 15px;
+    width: 50%;
+    float: left;
+  }
+  #auth {
+    height: 83px;
+    width: 40%;
+    float: right;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  
+  #vertical-separator {
+    width: 15px;
+    display: inline-block;
+    float: right;
+    border-left: 1px solid black;
+    height: 66px;
+    margin-top: 8.5px;
+  }
+
+  #logged-in {
+    float: right;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  
+  #login-register {
+    text-decoration: none;
+    color: #6290C8;
+  }
+  #login-register:hover {
+    text-decoration: underline;
+  }
+  
+  #logout-dropdown {
+    display: none;
+    border-style: none solid solid solid;
+    border-color: #1F487E;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    padding: 13px 5px 13px 5px;
+    background-color: #B1DDF1;
+    right: 5px;
+  }
+
+  #user-compress-wrapper:hover #logout-dropdown, #logout-dropdown:hover {
+    display: block;
+  }
+
+  #user-compress-wrapper:hover #logged-in {
+    height: 50px;
+  }
+  
+  #user-wrapper {
+    float: right;
+    position: relative;
+
+  }
+  #logout-btn {
+    background-color: transparent;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 0;
+    border: none;
+    text-align: left;
+  }
+
+  #topnav {
+    width: 100% !important;
+    overflow: hidden;
+    height: 60px;
+  }
+
+  #topnav a {
+    float: left;
+    color: white;
+    padding: 12px;
+    width: 16.66667%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #77a6d9;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 15px;
+
+    height: 40px;  
+    transition: height 0.2s, line-height 0.2s;
+    line-height: 15px;
+  }
+
+  #topnav a:hover {
+    background-color: #bedaf7;
+    color: black;
+    height: 60px;  
+    transition: height 0.2s, line-height 0.2s;
+    line-height: 35px;
+  }
+
+  #closebtn {
+    display: none;
+  }
+
+  #openbtn {
+    display: none;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 775px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  #top-wrapper {
+    width: 100%;
+    position: relative;
+    height: 100px;
+  }
+  
+  #headdiv {
+    display: none;
+  }
+
+  .top-header {
+    font-family: 'Source Code Pro', monospace;
+    margin: 15px 15px 15px 15px;
+    text-align: right;
+    width: calc(75% - 40px);
+    float: right;
+    height: 60px;
+    font-size: 5.7vw;
+    border-style: solid;
+    border-color: white;
+    line-height: 55px;
+  }
+
+  #topnav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1F487E;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  #openbtn {
+    display: block;
+    width: calc(25% - 30px);
+    float: left;
+    height: 60px;
+    background-color: #1D3461;
+    color: white;
+    border-style: none;
+    font-size: 20px;
+    line-height: 15px;
+    margin: 15px 15px 15px 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #openbtn:hover {
+    background-color: #376996;
+  }
+
+  #topnav a {
+    padding: 8px 5px 5px 8px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c2c2c2;
+    display: block;
+    transition: 0.3s;
+    width: 170px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+  }
+
+  #topnav a:hover {
+    color: white;
+    margin-left: 30px;
+  }
+
+  #closebtn {
+    margin-top: 20px;
+  }
+
+  #closebtn:hover {
+    margin-left: 20px !important;
+  }
+
+  #topnav #closebtn {
+    font-size: 30px;
+    text-align: right;
+    width: 190px;
+  }
+  
+  #auth {
+    display: none;
+  }
+  
+    
+}
